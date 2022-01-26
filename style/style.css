@@ -9,6 +9,7 @@
   background: #aef0f2;
   height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 
 .container .sun {
