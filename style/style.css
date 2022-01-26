@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap");
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  background: #aef0f2;
+  height: 100vh;
+  position: relative;
+}
+
+.container .sun {
+  background: #e0d52f;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  -webkit-box-shadow: #e0d52f 0px 0px 40px;
+          box-shadow: #e0d52f 0px 0px 40px;
+  margin: 2rem;
+  position: absolute;
+  -webkit-animation-name: dawning;
+          animation-name: dawning;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes dawning {
+  from {
+    margin-left: -200px;
+    -webkit-box-shadow: #e0d52f 0px 0px 40px;
+            box-shadow: #e0d52f 0px 0px 40px;
+  }
+  to {
+    margin-left: 2rem;
+    -webkit-box-shadow: #e0d52f 0px 0px 100px;
+            box-shadow: #e0d52f 0px 0px 100px;
+  }
+}
+
+@keyframes dawning {
+  from {
+    margin-left: -200px;
+    -webkit-box-shadow: #e0d52f 0px 0px 40px;
+            box-shadow: #e0d52f 0px 0px 40px;
+  }
+  to {
+    margin-left: 2rem;
+    -webkit-box-shadow: #e0d52f 0px 0px 100px;
+            box-shadow: #e0d52f 0px 0px 100px;
+  }
+}
+
+.container .celebration {
+  font-family: "Mochiy Pop P One", sans-serif;
+  color: #ca97cc;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  top: 30%;
+  left: 45%;
+}
+
+.container .celebration h1 {
+  -webkit-animation-name: celebrate;
+          animation-name: celebrate;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes celebrate {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes celebrate {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.container .flower {
+  -webkit-animation-name: flowerBloom;
+          animation-name: flowerBloom;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+
+@-webkit-keyframes flowerBloom {
+  from {
+    top: 80%;
+  }
+  to {
+    top: 0;
+  }
+}
+
+@keyframes flowerBloom {
+  from {
+    top: 80%;
+  }
+  to {
+    top: 0;
+  }
+}
+
+.container .flower-body {
+  background: #165703;
+  height: 200px;
+  width: 10px;
+  position: absolute;
+  top: 65vh;
+  left: 50%;
+}
+
+.container .flower-body::before {
+  content: '';
+  background: #165703;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 40%;
+  left: 13px;
+  z-index: 2;
+  border-radius: 20px 0 20px 0;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+}
+
+.container .flower-body::after {
+  content: '';
+  background: #540357;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: -40%;
+  left: -45px;
+  z-index: 2;
+  border-radius: 50%;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+  -webkit-animation-name: pulse;
+          animation-name: pulse;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+/*# sourceMappingURL=style.css.map */
